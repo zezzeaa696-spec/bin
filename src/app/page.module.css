@@ -1,0 +1,170 @@
+.container {
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: orange;
+}
+
+/* ================= CONTENT ================= */
+.mainContent {
+  padding: 30px 40px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+/* GRID 3 CỘT */
+.productList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD PRODUCT */
+.product {
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.productImage {
+  margin-bottom: 10px;
+}
+
+/* TÊN */
+.productName {
+  font-size: 13px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* GIÁ */
+.productPrice {
+  margin: 8px 0;
+}
+
+.price {
+  color: red;
+  font-size: 16px;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.percent {
+  background: red;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+/* CÒN HÀNG */
+.productRemain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+/* BUTTON */
+.buyButton {
+  display: block;
+  background: orange;
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.buyButton:hover {
+  background: #ff6600;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #222;
+  color: white;
+  padding: 30px 40px;
+  margin-top: 40px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p,
+.footer li {
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: orange;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
